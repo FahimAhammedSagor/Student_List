@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/iziToast.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header bg-body-secondary fs-3  font-weight-bold ">
+                        Enter Student Details
+                    </div>
+                    <div class="card-body">
+                        <form action="#" class="registration-form">
+                            <div class="w-100 mb-3">
+                                <label for="">Name:</label>
+                                <input type="text" class="form-control name" required>
+                            </div>
+                            <div class="w-100 mb-3">
+                                <label for="">ID:</label>
+                                <input type="number" class="form-control id" required>
+                            </div>
+                            <div class="w-100 mb-3">
+                                <label for="">Phone Number:</label>
+                                <input type="Number" class="form-control number" required>
+                            </div>
+                            <div class="w-100 mb-3">
+                                <label for="">Semester:</label>
+                                <select name="Semester" class="form-control semester " required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </div>
+
+                            <div class="w-100 mb-3">
+                                <label for="">Department:</label>
+                                <select name="Department" class="form-control department" required>
+                                    <option value="CSE">CSE</option>
+                                    <option value="EEE">EEE</option>
+                                    <option value="CE">CE</option>
+                                    <option value="Math">Math</option>
+                                    <option value="Bangla">Bangla</option>
+                                </select>
+                            </div>
+
+                            <button class="btn w-100 btn-info submit-button" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-header bg-body-secondary fs-3 ">Student List</div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name:</th>
+                                    <th scope="col">ID:</th>
+                                    <th scope="col">Phone Number:</th>
+                                    <th scope="col">Semester:</th>
+                                    <th scope="col">Department:</th>
+                                    <th scope="col">Action:</th>
+                                </tr>
+                            </thead>
+                            <tbody class="student-list">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script/jquery-4.0.0.min.js"></script>
+    <script src="script/iziToast.min.js"></script>
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
